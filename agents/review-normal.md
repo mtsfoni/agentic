@@ -1,7 +1,7 @@
 ---
-description: Routine read-only implementation reviewer. Use after Build completes code and verification; returns evidence-backed findings for Build to assess.
+description: Use for moderately complex changes involving multiple functions, classes, or interacting components. Appropriate when business logic, state handling, or nontrivial behavior changes require careful validation.
 mode: subagent
-model: anthropic/claude-sonnet-5
+model: anthropic/claude-sonnet-5-5
 temperature: 0.1
 permission:
   read: allow
