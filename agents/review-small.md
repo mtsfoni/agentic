@@ -1,5 +1,6 @@
 ---
-description: Default for simple, localized, low-risk changes: config updates, small bug fixes, renames, formatting, minor refactoring, or changes with obvious correctness. Prefer this reviewer unless there's a concrete reason to escalate.
+description: >-
+  Default for simple, localized, low-risk changes: config updates, small bug fixes, renames, formatting, minor refactoring, or changes with obvious correctness. Prefer this reviewer unless there's a concrete reason to escalate.
 mode: subagent
 model: anthropic/claude-haiku-5-5
 temperature: 0.1
