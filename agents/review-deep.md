@@ -2,7 +2,6 @@
 description: >-
   Reserve for high-risk or highly complex changes: architectural decisions, difficult bugs, concurrency, security-sensitive logic, data integrity, or changes with broad system-wide consequences. Do not use merely because a change touches many files.
 mode: subagent
-model: anthropic/claude-opus-5-5
 temperature: 0.1
 permission:
   read: allow

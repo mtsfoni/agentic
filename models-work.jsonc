@@ -1,0 +1,32 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "builder": {
+      "model": "openai/gpt-6.1-sol"
+    },
+    "builder-fast": {
+      "model": "openai/gpt-6-luna"
+    },
+    "orchestrator": {
+      "model": "openai/gpt-6.1-sol"
+    },
+    "refactor": {
+      "model": "openai/gpt-6.1-sol"
+    },
+    "planner": {
+      "model": "openai/gpt-6.1-sol"
+    },
+    "incident-analyst": {
+      "model": "openai/gpt-6.1-sol"
+    },
+    "review-small": {
+      "model": "openai/gpt-6-luna"
+    },
+    "review-normal": {
+      "model": "anthropic/claude-sonnet-5.5"
+    },
+    "review-deep": {
+      "model": "anthropic/claude-opus-5.5"
+    }
+  }
+}
