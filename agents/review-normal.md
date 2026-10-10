@@ -1,7 +1,6 @@
 ---
 description: Routine read-only implementation reviewer. Use after Build completes code and verification; returns evidence-backed findings for Build to assess.
 mode: subagent
-model: anthropic/claude-sonnet-5
 temperature: 0.1
 permission:
   read: allow

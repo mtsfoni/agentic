@@ -1,7 +1,6 @@
 ---
 description: Fast read-only implementation reviewer. Use after small, uncritical changes.
 mode: subagent
-model: openai/gpt-5.6-luna
 temperature: 0.1
 permission:
   read: allow

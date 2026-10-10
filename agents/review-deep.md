@@ -1,7 +1,6 @@
 ---
 description: Deep read-only implementation reviewer. Use only when explicitly requested or when Build identifies unusually high risk or complexity; applies the same evidence and severity bar as review-normal.
 mode: subagent
-model: anthropic/claude-opus-5
 temperature: 0.1
 permission:
   read: allow
