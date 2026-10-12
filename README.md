@@ -12,8 +12,8 @@ someone else.
 2. `planner` plans a fix or a new feature. It asks questions and shares
    relevant implementation insights, then records the completed plan in a
    document for `builder` or `orchestrator` to implement.
-3. `builder` implements work directly or as a subagent. `orchestrator` executes
-   a written plan by handing each phase sequentially to a fresh builder,
+3. `builder` implements work directly or as a subagent. `orchestrator` accepts
+   a direct request or a written plan and hands each phase sequentially to a fresh builder,
    with a refactor checkpoint after every five implementation phases and for
    any remaining phases at the end. Final verification follows refactoring.
    It stops if a phase or checkpoint fails its checks.
@@ -55,6 +55,11 @@ parent and cannot delegate work or enter planning mode. `refactor` is subagent-o
 and performs classical behavior-preserving cleanup of completed work, using
 GPT-6.1 Sol in both model profiles. Orchestrator is primary-only and can delegate
 only to builder and refactor.
+
+A written plan is optional for orchestrator. For a direct request, it inspects
+repository context and creates a small working outline in the conversation.
+It asks questions only when requirements or consequential decisions are unclear;
+it does not require a plan file before starting.
 
 Refactor checkpoints improve naming, duplication, readability, and structure
 within the completed work's scope; they do not add features or redesign the
